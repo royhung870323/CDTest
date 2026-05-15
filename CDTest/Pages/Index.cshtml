@@ -1,0 +1,21 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <div class="card mt-4 p-4 shadow-sm">
+        <form method="get">
+            <div class="mb-3">
+                <input type="number" asp-for="NumA" class="form-control d-inline-block w-auto" placeholder="輸入數字 A" />
+                <span class="h3 mx-2"> + </span>
+                <input type="number" asp-for="NumB" class="form-control d-inline-block w-auto" placeholder="輸入數字 B" />
+                <button type="submit" class="btn btn-success ms-2">計算</button>
+            </div>
+        </form>
+
+        <hr />
+        <h2 class="text-primary">計算結果：@Model.Result</h2>
+    </div>
+</div>

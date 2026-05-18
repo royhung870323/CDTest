@@ -41,9 +41,6 @@ jobs:
                 file: ./Dockerfile
                 push: true  
                 tags: ghcr.io/royhung870323/cdtest/test:latest
-                # tags: |
-                #   ghcr.io/royhung870323/cdtest/test:latest
-                #   ghcr.io/royhung870323/cdtest/test:${{ github.run_number }}
     # CD:
     #     needs: CI # 確保 CI 成功、Image 推上去倉庫了，才執行部署
     #     runs-on: ubuntu-latest
